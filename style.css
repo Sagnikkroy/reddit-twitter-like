@@ -103,7 +103,7 @@ background-color: rgba(0, 0, 0, 0);
 h5{
     color: #757575;
     background-color: rgba(127, 255, 212, 0);
-    font-weight: lighter;
+    font-weight:normal;
 }
 h3{
     font-weight: bold;
