@@ -38,11 +38,11 @@ margin: 0;
     margin-left: 10px;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(9, 12, 14);
     border: 1px solid #3c3c3c;
     height:fit-content;
     width: 90%;
-    border-radius: 1vh ;
+    border-radius: 3vh ;
     box-shadow: inset;
     color: aliceblue;
     margin-top: 10px;
@@ -78,6 +78,7 @@ border-radius: 3px;
     height:60px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:left;
     border-bottom:1px solid #3c3c3c;
     align-items: center;
     background-color: #00000000;
@@ -121,7 +122,7 @@ h3:hover{
     border-radius: 5px;
     background-image: url(download.jpeg);
     background-size:cover;
-    border: 1px solid #3c3c3c;
+   
     transition: 0.3s;
 }
 .int{
@@ -140,7 +141,7 @@ h3:hover{
     color: rgb(0, 102, 255);
 }
 .img:hover{
-    border: 2px solid #494949;
+    
     transition: 0.3s;
 }
 .usernameshow{
@@ -205,3 +206,83 @@ border: none;
 color: aliceblue;
 font-size: larger;
 font-weight: lighter;}
+
+.button {
+    margin-left: 5vh;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: rgb(137, 137, 137);
+    border: 1.5px solid rgb(137, 137, 137);
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    scale: 1.01;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  .everlast{
+    display: flex;
+    left: 150px;
+    height:100%;
+    justify-content: left;
+    align-items: center;
+  }
+  .nametags{
+    margin-left: 1vh;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    align-items: left;
+  }
+  .com{
+    margin-top: 0.5vh;
+    margin-bottom: 1.5vh;
+  }
+  h4{
+    font-weight: normal;
+    font-size: small;
+  }
+  .time{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contain{
+    display: flex;
+    height: 100%;
+    
+  }
+  
+  
