@@ -11,7 +11,7 @@
 
 .fyp {
     display: grid;
-    grid-template-columns: 1fr minmax(400px,800px) 1fr;
+    grid-template-columns: 1fr minmax(400px,700px) 1fr;
     height: auto;
     width: auto;
     background-color: rgba(0, 0, 0, 0);
@@ -41,6 +41,7 @@
     border: 1px solid #5e5e5e;
     height: fit-content;
     width: 90%;
+    
     border-radius: 3vh;
     color: aliceblue;
     margin-top: 1vh;
@@ -88,12 +89,15 @@
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0);
     height: fit-content;
+    cursor: pointer;
     width: 90%;
     color: aliceblue;
     margin-top: 1vh;
     margin-bottom: 2vh;
 }
-
+.tweetsec:hover {
+    color: rgb(255, 255, 255);
+}
 .name {
     margin-left: 1vh;
     background-color: #00000000;
@@ -216,8 +220,8 @@ h6 {
     position: relative;
     padding: 8px 23px;
     font-size: 14px;
-    color: rgb(137, 137, 137);
-    border: 1.5px solid rgb(137, 137, 137);
+    color: aliceblue;
+    border: 1.5px solid aliceblue;
     border-radius: 8px;
     background-color: transparent;
     font-weight: 600;
@@ -314,4 +318,9 @@ h4 {
     width: 90%;
     margin: 2vh;
     border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.come:hover{
+    background-color: #262626;
 }
